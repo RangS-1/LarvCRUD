@@ -25,6 +25,7 @@
                     <td>{{ $student->nama }}</td>
                     <td>{{ $student->rayon }}</td>
                     <td>{{ $student->rombel }}</td>
+                    <td>{{ $student->email }}</td>
                     <td>
                         <a href="{{ route('students.edit', $student) }}">Edit</a>
                         <form action="{{ route('students.destroy', $student) }}" method="POST"
@@ -38,7 +39,7 @@
                 </tr>
             @empty
                 <tr>
-                    <td colspan="7">Belum ada data siswa.</td>
+                    <td colspan="7">Data siswa tidak ada.</td>
                 </tr>
             @endforelse
         </tbody>
