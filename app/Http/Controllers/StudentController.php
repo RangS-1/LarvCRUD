@@ -37,6 +37,10 @@ class StudentController extends Controller
             'rombel'    => 'required|string|max:20',
             'email'     => 'nullable|email|unique:students,email',
         ]);
+
+        Students::create($data);
+
+        return redirect()->route('students.index') ->with('success', 'Data ditambahkan');
     }
 
     /**
