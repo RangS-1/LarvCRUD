@@ -22,7 +22,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        //
+        return view('students.create');
     }
 
     /**
@@ -30,7 +30,13 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'nis'       => 'required|string|max:20|unique:students,nis', 
+            'nama'      => 'required|string|max:100', 
+            'rayon'     => 'required|string|max:20', 
+            'rombel'    => 'required|string|max:20',
+            'email'     => 'nullable|email|unique:students,email',
+        ]);
     }
 
     /**
