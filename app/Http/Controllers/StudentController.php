@@ -38,7 +38,7 @@ class StudentController extends Controller
             'email'     => 'nullable|email|unique:students,email',
         ]);
 
-        Students::create($data);
+        Student::create($data);
 
         return redirect()->route('students.index') ->with('success', 'Data ditambahkan');
     }
@@ -60,9 +60,9 @@ class StudentController extends Controller
     {
         $data = $request->validate([
             'nis'   => ['required', 'string', 'max:20', Rule::unique('students', 'nis')->ignore($student->id)],
-            'nama'  => 'required|string|max100',
-            'rayon' => 'required|string|max20',
-            'rombel'=> 'required|string|max20',
+            'nama'  => 'required|string|max:100',
+            'rayon' => 'required|string|max:20',
+            'rombel'=> 'required|string|max:20',
             'email' => ['nullable', 'email', Rule::unique('students', 'email')->ignore($student->id)],
         ]);
 
