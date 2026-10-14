@@ -13,7 +13,7 @@
                 <th>Nama</th>
                 <th>Rombel</th>
                 <th>Rayon</th>
-                <th>No.HP</th>
+                <th>No_Telp</th>
                 <th>Email</th>
                 <th>Tombol</th>
             </tr>
@@ -26,7 +26,7 @@
                     <td>{{ $student->nama }}</td>
                     <td>{{ $student->rombel }}</td>
                     <td>{{ $student->rayon }}</td>
-                    <td>{{ $student->nohp }}</td>
+                    <td>{{ $student->no_telp }}</td>
                     <td>{{ $student->email }}</td>
                     <td>
                         <a href="{{ route('students.edit', $student) }}">Edit</a>

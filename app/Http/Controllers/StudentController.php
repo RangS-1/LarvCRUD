@@ -31,11 +31,11 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'nis'       => 'required|string|max:20|unique:students,nis', 
+            'nis'       => 'required|numeric|min:20|unique:students,nis', 
             'nama'      => 'required|string|max:100', 
             'rayon'     => 'required|string|max:20', 
             'rombel'    => 'required|string|max:20',
-            'nohp'      => 'required|string|max:20',
+            'no_telp'   => 'required|numeric|min:20',
             'email'     => 'nullable|email|unique:students,email',
         ]);
 
@@ -60,11 +60,11 @@ class StudentController extends Controller
     public function update(Request $request, Student $student)
     {
         $data = $request->validate([
-            'nis'   => ['required', 'string', 'max:20', Rule::unique('students', 'nis')->ignore($student->id)],
+            'nis'   => ['required', 'numeric', 'min:20', Rule::unique('students', 'nis')->ignore($student->id)],
             'nama'  => 'required|string|max:100',
             'rayon' => 'required|string|max:20',
             'rombel'=> 'required|string|max:20',
-            'nohp'  => 'required|string|max:20',
+            'no_telp'  => 'required|numeric|min:20',
             'email' => ['nullable', 'email', Rule::unique('students', 'email')->ignore($student->id)],
         ]);
 

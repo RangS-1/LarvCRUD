@@ -8,7 +8,7 @@
 
 <p>
     <label>NIS</label><br>
-    <input type="text" name="nis" value="{{ old('nis', $student->nis ?? '') }}">
+    <input type="number" name="nis" value="{{ old('nis', $student->nis ?? '') }}">
 </p>
 <p>
     <label>Nama</label><br>
@@ -23,8 +23,8 @@
     <input type="text" name="rayon" value="{{ old('rayon', $student->rayon ?? '') }}">
 </p>
 <p>
-    <label>No.HP</label><br>
-    <input type="text" name="nohp" value="{{ old('nohp', $student->nohp ?? '') }}">
+    <label>No_Telp</label><br>
+    <input type="number" name="no_telp" value="{{ old('no_telp', $student->no_telp ?? '') }}">
 </p>
 <p>
     <label>Email</label><br>

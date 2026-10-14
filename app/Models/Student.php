@@ -11,7 +11,7 @@ class Student extends Model
         'nama',
         'rayon',
         'rombel',
-        'nohp',
+        'no_telp',
         'email'
     ];
 }
