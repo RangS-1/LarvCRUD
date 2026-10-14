@@ -58,7 +58,17 @@ class StudentController extends Controller
 
     public function update(Request $request, Student $student)
     {
-        //
+        $data = $request->validate([
+            'nis'   => ['required', 'string', 'max:20', Rule::unique('students', 'nis')->ignore($student->id)],
+            'nama'  => 'required|string|max100',
+            'rayon' => 'required|string|max20',
+            'rombel'=> 'required|string|max20',
+            'email' => ['nullable', 'email', Rule::unique('students', 'email')->ignore($student->id)],
+        ]);
+
+        $student->update($data);
+
+        return redirect()->route('students.index')->with('success', 'Data diperbarui');
     }
 
     /**
