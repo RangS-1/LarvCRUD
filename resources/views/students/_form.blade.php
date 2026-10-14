@@ -27,6 +27,10 @@
     <input type="number" name="no_telp" value="{{ old('no_telp', $student->no_telp ?? '') }}">
 </p>
 <p>
+    <label>Alamat</label><br>
+    <input type="text" name="alamat" value="{{ old('alamat', $student->alamat ?? '') }}">
+</p>
+<p>
     <label>Email</label><br>
     <input type="email" name="email" value="{{ old('email', $student->email ?? '') }}">
 </p>

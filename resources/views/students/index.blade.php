@@ -14,6 +14,7 @@
                 <th>Rombel</th>
                 <th>Rayon</th>
                 <th>No_Telp</th>
+                <th>Alamat</th>
                 <th>Email</th>
                 <th>Tombol</th>
             </tr>
@@ -27,6 +28,7 @@
                     <td>{{ $student->rombel }}</td>
                     <td>{{ $student->rayon }}</td>
                     <td>{{ $student->no_telp }}</td>
+                    <td>{{ $student->alamat }}</td>
                     <td>{{ $student->email }}</td>
                     <td>
                         <a href="{{ route('students.edit', $student) }}">Edit</a>

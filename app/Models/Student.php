@@ -12,6 +12,7 @@ class Student extends Model
         'rayon',
         'rombel',
         'no_telp',
+        'alamat',
         'email'
     ];
 }

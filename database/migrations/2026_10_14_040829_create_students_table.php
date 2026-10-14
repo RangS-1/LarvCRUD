@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('rayon');
             $table->string('rombel');
             $table->integer('no_telp');
+            $table->string('alamat');
             $table->string('email')->nullable()->unique();
             $table->timestamps();
         });
