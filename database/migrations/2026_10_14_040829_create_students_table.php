@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('rayon');
             $table->string('rombel');
+            $table->string('nohp');
             $table->string('email')->nullable()->unique();
             $table->timestamps();
         });

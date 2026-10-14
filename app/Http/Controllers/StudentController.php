@@ -35,6 +35,7 @@ class StudentController extends Controller
             'nama'      => 'required|string|max:100', 
             'rayon'     => 'required|string|max:20', 
             'rombel'    => 'required|string|max:20',
+            'nohp'      => 'required|string|max:20',
             'email'     => 'nullable|email|unique:students,email',
         ]);
 
@@ -63,6 +64,7 @@ class StudentController extends Controller
             'nama'  => 'required|string|max:100',
             'rayon' => 'required|string|max:20',
             'rombel'=> 'required|string|max:20',
+            'nohp'  => 'required|string|max:20',
             'email' => ['nullable', 'email', Rule::unique('students', 'email')->ignore($student->id)],
         ]);
 

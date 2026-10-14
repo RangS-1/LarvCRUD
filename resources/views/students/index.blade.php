@@ -11,8 +11,9 @@
                 <th>No</th>
                 <th>NIS</th>
                 <th>Nama</th>
-                <th>Rayon</th>
                 <th>Rombel</th>
+                <th>Rayon</th>
+                <th>No.HP</th>
                 <th>Email</th>
                 <th>Tombol</th>
             </tr>
@@ -23,8 +24,9 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $student->nis }}</td>
                     <td>{{ $student->nama }}</td>
-                    <td>{{ $student->rayon }}</td>
                     <td>{{ $student->rombel }}</td>
+                    <td>{{ $student->rayon }}</td>
+                    <td>{{ $student->nohp }}</td>
                     <td>{{ $student->email }}</td>
                     <td>
                         <a href="{{ route('students.edit', $student) }}">Edit</a>

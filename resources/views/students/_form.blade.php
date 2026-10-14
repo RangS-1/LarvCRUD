@@ -15,12 +15,16 @@
     <input type="text" name="nama" value="{{ old('nama', $student->nama ?? '') }}">
 </p>
 <p>
+    <label>Rombel</label><br>
+    <input type="text" name="rombel" value="{{ old('rombel', $student->rombel ?? '') }}">
+</p>
+<p>
     <label>Rayon</label><br>
     <input type="text" name="rayon" value="{{ old('rayon', $student->rayon ?? '') }}">
 </p>
 <p>
-    <label>Rombel</label><br>
-    <input type="text" name="rombel" value="{{ old('rombel', $student->rombel ?? '') }}">
+    <label>No.HP</label><br>
+    <input type="text" name="nohp" value="{{ old('nohp', $student->nohp ?? '') }}">
 </p>
 <p>
     <label>Email</label><br>
