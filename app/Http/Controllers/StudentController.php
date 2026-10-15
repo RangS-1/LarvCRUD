@@ -48,10 +48,11 @@ class StudentController extends Controller
     /**
      * Display the specified resource.
      */
-    //public function show(Student $student)
-    //{
-    //    //
-    //}
+    public function show(Student $student)
+    {
+        $students = Student::latest()->get();
+        return view('students.show', compact('students'));
+    }
 
     public function edit(Student $student)
     {
