@@ -50,8 +50,7 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
-        $students = Student::latest()->get();
-        return view('students.show', compact('students'));
+        return view('students.show', compact('student'));
     }
 
     public function edit(Student $student)
