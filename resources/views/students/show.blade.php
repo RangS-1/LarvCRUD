@@ -10,7 +10,6 @@
     <table border="1" cellpadding="6" cellspacing="0">
         <thead>
             <tr>
-                <th>No</th>
                 <th>NIS</th>
                 <th>Nama</th>
                 <th>Rombel</th>
@@ -24,9 +23,7 @@
             </tr>
         </thead>
         <tbody>
-            @forelse ($students as $student)
                 <tr>
-                    <td>{{ $loop->iteration }}</td>
                     <td>{{ $student->nis }}</td>
                     <td>{{ $student->nama }}</td>
                     <td>{{ $student->rombel }}</td>
@@ -50,11 +47,6 @@
                         -->
                     </td>
                 </tr>
-            @empty
-                <tr>
-                    <td colspan="7">Data siswa tidak ada.</td>
-                </tr>
-            @endforelse
         </tbody>
     </table>
 @endsection
