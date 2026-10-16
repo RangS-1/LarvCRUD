@@ -6,39 +6,39 @@
     </ul>
 @endif
 
-<p>
-    <label>NIS</label><br>
-    <input type="number" name="nis" value="{{ old('nis', $student->nis ?? '') }}">
+<p style="margin: 5px;">
+    <label style="font-size: 20px; font-weight: bold;">NIS</label><br>
+    <input type="number" name="nis" value="{{ old('nis', $student->nis ?? '') }}" style="border-style: solid; border-radius: 5px; padding: 5px;">
 </p>
-<p>
-    <label>Nama</label><br>
-    <input type="text" name="nama" value="{{ old('nama', $student->nama ?? '') }}">
+<p style="margin: 5px;">
+    <label style="font-size: 20px; font-weight: bold;">Nama</label><br>
+    <input type="text" name="nama" value="{{ old('nama', $student->nama ?? '') }}" style="border-style: solid; border-radius: 5px; padding: 5px;">
 </p>
-<p>
-    <label>Rombel</label><br>
-    <input type="text" name="rombel" value="{{ old('rombel', $student->rombel ?? '') }}">
+<p style="margin: 5px;">
+    <label style="font-size: 20px; font-weight: bold;">Rombel</label><br>
+    <input type="text" name="rombel" value="{{ old('rombel', $student->rombel ?? '') }}" style="border-style: solid; border-radius: 5px; padding: 5px;">
 </p>
-<p>
-    <label>Rayon</label><br>
-    <input type="text" name="rayon" value="{{ old('rayon', $student->rayon ?? '') }}">
+<p style="margin: 5px;">
+    <label style="font-size: 20px; font-weight: bold;">Rayon</label><br>
+    <input type="text" name="rayon" value="{{ old('rayon', $student->rayon ?? '') }}" style="border-style: solid; border-radius: 5px; padding: 5px;">
 </p>
-<p>
-    <label>No_Telp</label><br>
-    <input type="number" name="no_telp" value="{{ old('no_telp', $student->no_telp ?? '') }}">
+<p style="margin: 5px;">
+    <label style="font-size: 20px; font-weight: bold;">No_Telp</label><br>
+    <input type="number" name="no_telp" value="{{ old('no_telp', $student->no_telp ?? '') }}" style="border-style: solid; border-radius: 5px; padding: 5px;">
 </p>
-<p>
-    <label>Jenis Kelamin</label>
-    <select name="kelamin" id="kelamin" class="form-control" required>
+<p style="margin: 5px;">
+    <label style="font-size: 20px; font-weight: bold;">Jenis Kelamin</label><br>
+    <select name="kelamin" id="kelamin" class="form-control" required style="border-style: solid; border-radius: 5px; padding: 5px;">
         <option value="">-- Pilih Jenis Kelamin --</option>
         <option value="Laki-Laki">Laki-laki</option>
         <option value="Perempuan">Perempuan</option>
     </select>
 </p>
-<p>
-    <label>Alamat</label><br>
-    <input type="text" name="alamat" value="{{ old('alamat', $student->alamat ?? '') }}">
+<p style="margin: 5px;">
+    <label style="font-size: 20px; font-weight: bold;">Alamat</label><br>
+    <input type="text" name="alamat" value="{{ old('alamat', $student->alamat ?? '') }}" style="border-style: solid; border-radius: 5px; padding: 5px;">
 </p>
-<p>
-    <label>Email</label><br>
-    <input type="email" name="email" value="{{ old('email', $student->email ?? '') }}">
+<p style="margin: 5px;">
+    <label style="font-size: 20px; font-weight: bold;">Email</label><br>
+    <input type="email" name="email" value="{{ old('email', $student->email ?? '') }}" style="border-style: solid; border-radius: 5px; padding: 5px;">
 </p>

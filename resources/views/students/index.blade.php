@@ -3,7 +3,7 @@
 @section('title', 'Daftar Siswa')
 
 @section('content')
-    <p><a href="{{ route('students.create') }}">+ Tambah Siswa</a></p>
+    <p style="font-size: 20px; padding: 5px;"><a href="{{ route('students.create') }}">+ Tambah Siswa</a></p>
 
     <table border="1" cellpadding="6" cellspacing="0">
         <thead>

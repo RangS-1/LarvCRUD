@@ -3,7 +3,7 @@
 @section('title', 'Login')
 
 @section('content')
-    <h2>Login</h2>
+    <h2 style="padding: 5px; font-size: 20px;">Login</h2>
 
     @if ($errors->any())
         <ul>
@@ -13,18 +13,18 @@
         </ul>
     @endif
 
-    <form action="{{ route('login') }}" method="POST">
+    <form action="{{ route('login') }}" method="POST" style="padding: 5px;">
         @csrf
         <p>
-            <label>Email</label><br>
-            <input type="email" name="email" value="{{ old('email') }}">
+            <label style="font-size: 20px; font-weight: bold;">Email</label><br>
+            <input type="email" name="email" value="{{ old('email') }}" style="border-style: solid; border-radius: 5px; padding: 5px;">
         </p>
         <p>
-            <label>PW</label><br>
-            <input type="password" name="password">
+            <label style="font-size: 20px; font-weight: bold;">PW</label><br>
+            <input type="password" name="password" style="border-style: solid; border-radius: 5px; padding: 5px;">
         </p>
-        <button type="submit">Login</button>
+        <button type="submit" style="font-size: 20px; font-weight: bold; background-color:aqua">Login</button>
     </form>
 
-    <p>Belum punya akun? <a href="{{ route('register') }}">Register</a></p>
+    <p style="font-size: 20px;">Belum punya akun? <a href="{{ route('register') }}">Register</a></p>
 @endsection

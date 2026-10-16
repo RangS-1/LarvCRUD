@@ -4,6 +4,8 @@
 
 @section('content')
 
+    <br>
+    <br>
     <table border="1" cellpadding="6" cellspacing="0">
         <thead>
             <tr>

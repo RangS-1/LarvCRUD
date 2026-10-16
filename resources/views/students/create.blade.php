@@ -8,7 +8,7 @@
     <form action="{{ route('students.store') }}" method="POST">
         @csrf
         @include('students._form')
-        <button type="submit">Simpan</button>
-        <a href="{{ route('students.index') }}">Batal</a>
+        <button type="submit" style="font-size: 20px; font-weight: bold; background-color:aqua">Simpan</button>
+        <a href="{{ route('students.index') }}" style="font-size: 20px; font-weight: bold; background-color:aqua">Batal</a>
     </form>
 @endsection
