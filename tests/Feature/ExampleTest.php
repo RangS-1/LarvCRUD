@@ -2,11 +2,14 @@
 
 namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * A basic test example.
      */
@@ -15,5 +18,16 @@ class ExampleTest extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200);
+    }
+
+    public function test_authenticated_user_can_view_the_create_student_form(): void
+    {
+        $this->actingAs(User::factory()->create());
+
+        $response = $this->get('/students/create');
+
+        $response->assertOk()
+            ->assertSee('Tambah Siswa')
+            ->assertSee('-- Pilih Jenis Kelamin --');
     }
 }
