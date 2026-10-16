@@ -23,9 +23,6 @@
             <label>PW</label><br>
             <input type="password" name="password">
         </p>
-        <p>
-            <label><input type="checkbox" name="remember"> Ingat saya</label>
-        </p>
         <button type="submit">Login</button>
     </form>
 

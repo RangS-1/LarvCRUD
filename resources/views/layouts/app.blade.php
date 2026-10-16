@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catatan Siswa</title>
+
 </head>
-<body>
-    <h1>Data Siswa</h1>
+<body style="margin: 0px; font-family:'Courier New', Courier, monospace">
+    <h1 style="background-color: blue; margin: 0px; padding: 20px; box-shadow: 2px;">Data Siswa</h1>
     <br>
-    <hr>
     <br>
 
-    <nav>
-        <a href="{{ route('students.index') }}">Data Siswa</a> |
+    <nav">
+        <a href="{{ route('students.index') }}" style="padding: 10px; font-size: 20px; border-style: solid; border-color:black; border-radius: 20px;">Dashboard</a> |
 
         @auth
             Halo, {{ auth()->user()->name }} |
-            <form action="{{ route('logout') }}" method="POST" style="display:inline">
+            <form action="{{ route('logout') }}" method="POST" style="display:inline; padding: 10px; font-size: 20px; border-style: solid; border-color:black; border-radius: 20px;">
                 @csrf
-                <button type="submit">Logout</button>
+                <button type="submit" style="background-color: white; border: none; padding: 10px; font-size: 10px;">
+                    Logout
+                </button>
             </form>
         @else
-            <a href="{{ route('login') }}">Login</a> |
-            <a href="{{ route('register') }}">Register</a>
+            <a href="{{ route('login') }}" style="padding: 10px; font-size: 20px; border-style: solid; border-color:black; border-radius: 20px;">Login</a> |
+            <a href="{{ route('register') }}" style="padding: 10px; font-size: 20px; border-style: solid; border-color:black; border-radius: 20px;">Register</a>
         @endauth
     </nav>
-    <hr>
     <br>
     
     @if (session('success'))
