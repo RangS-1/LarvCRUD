@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('rombel');
             $table->integer('no_telp');
             $table->string('alamat');
+            $table->string('kelamin');
             $table->string('email')->nullable()->unique();
             $table->timestamps();
         });

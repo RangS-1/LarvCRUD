@@ -27,6 +27,14 @@
     <input type="number" name="no_telp" value="{{ old('no_telp', $student->no_telp ?? '') }}">
 </p>
 <p>
+    <label>Jenis Kelamin</label>
+    <select name="kelamin" id="kelamin" class="form-control" required>
+        <option value="">-- Pilih Jenis Kelamin --</option>
+        <option value="Laki-Laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+    </select>
+</p>
+<p>
     <label>Alamat</label><br>
     <input type="text" name="alamat" value="{{ old('alamat', $student->alamat ?? '') }}">
 </p>

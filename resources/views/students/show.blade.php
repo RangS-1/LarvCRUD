@@ -16,8 +16,10 @@
                 
                 <th>Rayon</th>
                 <th>No_Telp</th>
+                <th>Jenis Kelamin</th>
                 <th>Alamat</th>
                 <th>Email</th>
+
                 
                 <th>Tombol</th>
             </tr>
@@ -30,6 +32,7 @@
                     
                     <td>{{ $student->rayon }}</td>
                     <td>{{ $student->no_telp }}</td>
+                    <td>{{ $student->kelamin }}</td>
                     <td>{{ $student->alamat }}</td>
                     <td>{{ $student->email }}</td>
                     
