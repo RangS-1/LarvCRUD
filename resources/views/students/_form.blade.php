@@ -30,8 +30,8 @@
     <label style="font-size: 20px; font-weight: bold;">Jenis Kelamin</label><br>
     <select name="kelamin" id="kelamin" class="form-control" required style="border-style: solid; border-radius: 5px; padding: 5px;">
         <option value="">-- Pilih Jenis Kelamin --</option>
-        <option value="Laki-Laki">Laki-laki</option>
-        <option value="Perempuan">Perempuan</option>
+        <option value="Laki-Laki" @selected($student->kelamin == 'Laki-Laki')>Laki-laki</option>
+        <option value="Perempuan" @selected($student->kelamin == 'Perempuan')>Perempuan</option>
     </select>
 </p>
 <p style="margin: 5px;">

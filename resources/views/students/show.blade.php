@@ -30,7 +30,7 @@
                     <td>{{ $student->rombel }}</td>
                     
                     <td>{{ $student->rayon }}</td>
-                    <td>{{ $student->no_telp }}</td>
+                    <td>0{{ $student->no_telp }}</td>
                     <td>{{ $student->kelamin }}</td>
                     <td>{{ $student->alamat }}</td>
                     <td>{{ $student->email }}</td>
