@@ -19,6 +19,6 @@ Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
     Route::resource('students', StudentController::class)
-        ->except(['index']);
+        ->except(['awal']);
         //->except(['index', 'show']);
 });
